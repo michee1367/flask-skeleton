@@ -1,5 +1,7 @@
 import json
-from models.machine import Inserttable, db
+from models import db
+from models.machine import Inserttable
+from models.EntityAdministration.province import Province
 
 def create_logic():
     try:

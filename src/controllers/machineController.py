@@ -1,5 +1,5 @@
 import json
-from models.machine import Inserttable, db
+#from models.machine import Inserttable, db
 from services.user_service import insert_logic, create_logic, all_logic
 
 def index():

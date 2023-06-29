@@ -2,7 +2,8 @@ from flask import Flask
 from flask_migrate import Migrate
 from routes.blueprint import blueprint
 from routes.auth import auth
-from models.machine import db
+#from models.machine import db
+from models import db
 
 from flask_jwt_extended import JWTManager
 
