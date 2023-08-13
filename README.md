@@ -32,6 +32,14 @@
 
 ```
 
+- create postgis extension
+```
+    open pgAdmin
+    select (click) your database
+    click "SQL" icon on the bar
+    run "CREATE EXTENSION postgis;" code
+```
+
 
 - Install dependances
 
@@ -69,5 +77,12 @@
 ```bash
 
     flask db upgrade 
+
+```
+
+- Load Data
+```bash
+
+ flask load-data load-existing-plant ../data/RDC_Centrales_existantes_GEOJSON.geojson
 
 ```

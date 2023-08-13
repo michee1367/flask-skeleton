@@ -15,3 +15,5 @@ print(glob.glob(dirname + "/*.py") )
 listes = [os.path.basename(f)[:-3] for f in glob.glob(dirname + "/*") if os.path.isdir(f) and not ('__' in f) and os.path.exists(f + '/__init__.py')]
 
 print(alls(fileName))
+
+
