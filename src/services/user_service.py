@@ -2,6 +2,7 @@ import json
 from models import db
 from models.machine import Inserttable
 from models.EntityAdministration.province import Province
+from models.ExistingPlants.existingPlant import ExistingPlants
 
 def create_logic():
     try:

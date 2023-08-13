@@ -4,6 +4,7 @@ from routes.blueprint import blueprint
 from routes.auth import auth
 #from models.machine import db
 from models import db
+from commands.loadData import loadData
 
 from flask_jwt_extended import JWTManager
 
@@ -20,6 +21,7 @@ app = create_app()  # Creating the app
 # Registering the blueprint
 app.register_blueprint(blueprint, url_prefix='/machines')
 app.register_blueprint(auth, url_prefix='/')
+app.register_blueprint(loadData)
 migrate = Migrate(app, db)  # Initializing the migration
 
 
