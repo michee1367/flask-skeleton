@@ -3,6 +3,7 @@ from models import db
 from models.machine import Inserttable
 from models.EntityAdministration.province import Province
 from models.ExistingPlants.existingPlant import ExistingPlants
+from models.Projects.Project import Project
 
 def create_logic():
     try:

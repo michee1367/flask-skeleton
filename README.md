@@ -85,4 +85,6 @@
 
  flask load-data load-existing-plant ../data/RDC_Centrales_existantes_GEOJSON.geojson
 
+ flask load-data load-projects "../data/RDC_Centroides_RA_GEOJSON.geojson"  "../data/RDC_Rayons_d_action_GEOJSON.geojson"
+
 ```

@@ -30,7 +30,7 @@ def downgrade():
     with op.batch_alter_table('existing_plant_existing_plant', schema=None) as batch_op:
         batch_op.create_index('idx_existing_plant_existing_plant_geom_0', ['geom'], unique=False)
 
-    op.create_table('spatial_ref_sys',
+    """op.create_table('spatial_ref_sys',
     sa.Column('srid', sa.INTEGER(), autoincrement=False, nullable=False),
     sa.Column('auth_name', sa.VARCHAR(length=256), autoincrement=False, nullable=True),
     sa.Column('auth_srid', sa.INTEGER(), autoincrement=False, nullable=True),
@@ -38,5 +38,5 @@ def downgrade():
     sa.Column('proj4text', sa.VARCHAR(length=2048), autoincrement=False, nullable=True),
     sa.CheckConstraint('srid > 0 AND srid <= 998999', name='spatial_ref_sys_srid_check'),
     sa.PrimaryKeyConstraint('srid', name='spatial_ref_sys_pkey')
-    )
+    )"""
     # ### end Alembic commands ###

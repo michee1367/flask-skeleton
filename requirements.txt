@@ -13,6 +13,7 @@ Flask-SQLAlchemy==3.0.3
 GeoAlchemy2==0.14.1
 gep-onsset==2019.0
 greenlet==2.0.2
+haversine==2.8.0
 importlib-metadata==6.6.0
 importlib-resources==5.12.0
 itsdangerous==2.1.2
